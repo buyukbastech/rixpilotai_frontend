@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rixpilot AI - Luxury Hair Clinic Landing Page Design System */
+
+
+@layer base {
+  :root {
+    /* Pure Obsidian Base */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    /* Cards with subtle glass effect */
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Neon Teal - Primary Brand Color */
+    --primary: 175 100% 45%;
+    --primary-foreground: 0 0% 0%;
+
+    /* Secondary - Muted Teal */
+    --secondary: 175 30% 15%;
+    --secondary-foreground: 175 100% 70%;
+
+    /* Muted tones */
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+
+    /* Accent with glow potential */
+    --accent: 175 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Glass borders */
+    --border: 0 0% 100% / 0.1;
+    --input: 0 0% 100% / 0.1;
+    --ring: 175 100% 50%;
+
+    --radius: 1rem;
+
+    /* Custom Properties for Rixpilot */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glow-teal: 0 0 40px rgba(0, 224, 200, 0.4);
+    --glow-teal-intense: 0 0 60px rgba(0, 224, 200, 0.6), 0 0 100px rgba(0, 224, 200, 0.3);
+
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 175 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 175 30% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 100% / 0.1;
+    --sidebar-ring: 175 100% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 175 100% 45%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 175 30% 15%;
+    --secondary-foreground: 175 100% 70%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 175 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100% / 0.1;
+    --input: 0 0% 100% / 0.1;
+    --ring: 175 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply relative overflow-hidden rounded-2xl;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Glowing Button */
+  .btn-glow {
+    @apply relative px-6 py-3 font-medium text-sm rounded-full transition-all duration-300;
+    background: linear-gradient(135deg, hsl(175 100% 45%) 0%, hsl(175 100% 35%) 100%);
+    color: hsl(0 0% 0%);
+    box-shadow: var(--glow-teal);
+  }
+
+  .btn-glow:hover {
+    box-shadow: var(--glow-teal-intense);
+    transform: translateY(-2px);
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(175 100% 70%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Subtle grid pattern */
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Bento box styling */
+  .bento-item {
+    @apply glass-card p-8 transition-all duration-500;
+  }
+
+  .bento-item:hover {
+    border-color: rgba(0, 224, 200, 0.3);
+    box-shadow: 0 0 40px rgba(0, 224, 200, 0.1);
+  }
+
+  /* Icon glow */
+  .icon-glow {
+    filter: drop-shadow(0 0 10px rgba(0, 224, 200, 0.5));
+  }
+}
+
+@layer utilities {
+  .tracking-tighter-custom {
+    letter-spacing: -0.05em;
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 40px rgba(0, 224, 200, 0.3);
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* Moving border overlay */
+.moving-border-overlay {
+  position: relative;
+}
+
+.moving-border-overlay::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  /* Exactly covers the border */
+  border-radius: inherit;
+  padding: 2px;
+  /* Thicker line for better visibility */
+  background: conic-gradient(from var(--angle), transparent 40%, var(--primary) 50%, transparent 60%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rotate 3s linear infinite;
+  pointer-events: none;
+  z-index: 20;
+  /* Ensure it's above the card content's background/borders */
+  opacity: 1;
+}
