@@ -8,6 +8,7 @@ import heroWhatsapp from '@/assets/rixpilot_whatsapp.mp4';
 import heroSacEkim from '@/assets/rixpilot_sac_ekim.mp4';
 import heroHappyDoctor from '@/assets/rixpilot_happy_doctor.mp4';
 import heroAi2 from '@/assets/rixpilot_ai2.mp4';
+import heroPoster from '@/assets/rixpilotai_3.png';
 
 const heroVideos = [
   heroClinic,
@@ -45,6 +46,7 @@ const HeroSection = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             className="w-full h-full object-cover"
+            poster={heroPoster}
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-black/40" />

@@ -66,7 +66,7 @@ const HowItWorksSection = () => {
                     </span>
                     <h2 className="text-3xl md:text-5xl font-light tracking-tighter-custom mb-6">
                         {t.howItWorks.title.part1}
-                        <span className="font-bold text-gradient">{t.howItWorks.title.part2}</span>
+                        <span className="font-bold text-gradient pr-1">{t.howItWorks.title.part2}</span>
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                         {t.howItWorks.description}

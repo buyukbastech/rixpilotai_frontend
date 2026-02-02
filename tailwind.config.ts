@@ -62,9 +62,9 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         teal: {
-          DEFAULT: "hsl(175 100% 45%)",
-          glow: "hsl(175 100% 50%)",
-          muted: "hsl(175 30% 15%)",
+          DEFAULT: "hsl(175, 100%, 45%)",
+          glow: "hsl(175, 100%, 50%)",
+          muted: "hsl(175, 30%, 15%)",
         },
       },
       borderRadius: {
