@@ -32,7 +32,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
           <motion.video
             key={currentVideoIndex}
             src={heroVideos[currentVideoIndex]}
@@ -46,7 +46,6 @@ const HeroSection = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             className="w-full h-full object-cover"
-            poster={heroPoster}
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-black/40" />
