@@ -31,7 +31,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <AnimatePresence>
           <motion.video
             key={currentVideoIndex}
@@ -40,12 +40,17 @@ const HeroSection = () => {
             muted
             loop={false}
             playsInline
+            controls={false}
             onEnded={handleVideoEnded}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             className="w-full h-full object-cover"
+            onLoadedData={(e) => {
+              const video = e.currentTarget;
+              video.play().catch(console.error);
+            }}
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-black/40" />

@@ -217,3 +217,13 @@
   /* Ensure it's above the card content's background/borders */
   opacity: 1;
 }
+
+/* Hide Vercel Toolbar and other overlays */
+vercel-live-feedback,
+#vercel-toolbar,
+[data-testid="vercel-toolbar"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
