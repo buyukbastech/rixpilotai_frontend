@@ -40,7 +40,7 @@ const SolutionsSection = () => {
     ];
 
     return (
-        <section id={t.header.solutionsId} className="py-24 px-6 relative bg-black/40">
+        <section id={t.header.solutionsId} className="py-20 md:py-24 px-6 relative bg-black/40">
             <div className="container mx-auto max-w-7xl relative z-10">
                 {/* Section Header */}
                 <motion.div
@@ -48,16 +48,16 @@ const SolutionsSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 md:mb-16"
                 >
-                    <span className="glass-card inline-block px-4 py-2 text-sm text-primary font-medium tracking-wide mb-6">
+                    <span className="glass-card inline-block px-4 py-2 text-xs md:text-sm text-primary font-medium tracking-wide mb-6">
                         {t.solutions.label}
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-light tracking-tighter-custom mb-6">
+                    <h2 className="text-3xl md:text-5xl font-light tracking-tighter-custom mb-6 px-4 md:px-0">
                         {t.solutions.title.part1}
-                        <span className="font-bold text-gradient">{t.solutions.title.part2}</span>
+                        <span className="font-bold text-gradient pr-2">{t.solutions.title.part2}</span>
                     </h2>
-                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                    <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto px-4 md:px-0">
                         {t.solutions.description}
                     </p>
                 </motion.div>
@@ -72,19 +72,19 @@ const SolutionsSection = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <div className="glass-card p-8 h-full hover:bg-white/5 transition-colors duration-300 group relative">
+                            <div className="glass-card p-6 md:p-8 h-full hover:bg-white/5 transition-colors duration-300 group relative">
                                 <BorderBeam
                                     size={300}
                                     duration={10}
                                     delay={0}
-                                    colorFrom="#2DD4BF"
-                                    colorTo="#0F766E"
+                                    colorFrom="#FBBF24"
+                                    colorTo="#D97706"
                                 />
-                                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <solution.icon className="w-6 h-6 text-primary icon-glow" />
+                                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <solution.icon className="w-5 h-5 md:w-6 md:h-6 text-primary icon-glow" />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-3">{solution.title}</h3>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
                                     {solution.description}
                                 </p>
                             </div>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Camera, Link2, CalendarClock, MessageCircle, BarChart3, Shield } from 'lucide-react';
+import { Camera, Link2, CalendarClock, BarChart3, Heart } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 const BentoGrid = () => {
@@ -25,26 +25,20 @@ const BentoGrid = () => {
       size: 'small',
     },
     {
-      icon: MessageCircle,
+      icon: BarChart3,
       title: t.features.items[3].title,
       description: t.features.items[3].description,
       size: 'medium',
     },
     {
-      icon: BarChart3,
+      icon: Heart,
       title: t.features.items[4].title,
       description: t.features.items[4].description,
       size: 'small',
     },
-    {
-      icon: Shield,
-      title: t.features.items[5].title,
-      description: t.features.items[5].description,
-      size: 'small',
-    },
   ];
   return (
-    <section id={t.header.featuresId} className="py-32 px-6 relative">
+    <section id={t.header.featuresId} className="py-20 md:py-32 px-6 relative">
       <div className="absolute inset-0 grid-pattern opacity-20" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -54,16 +48,16 @@ const BentoGrid = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <span className="glass-card inline-block px-4 py-2 text-sm text-primary font-medium tracking-wide mb-6">
+          <span className="glass-card inline-block px-4 py-2 text-xs md:text-sm text-primary font-medium tracking-wide mb-6">
             {t.features.label}
           </span>
-          <h2 className="text-4xl md:text-6xl font-light tracking-tighter-custom mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-tighter-custom mb-6">
             {t.features.title.part1}
-            <span className="font-bold text-gradient pr-2">{t.features.title.part2}</span>
+            <span className="font-bold text-gradient md:pr-2">{t.features.title.part2}</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto px-4 md:px-0">
             {t.features.description}
           </p>
         </motion.div>
@@ -78,15 +72,15 @@ const BentoGrid = () => {
             transition={{ duration: 0.6 }}
             className="md:col-span-2 md:row-span-2"
           >
-            <div className="bento-item h-full flex flex-col justify-between min-h-[300px] md:min-h-[400px]">
+            <div className="bento-item h-full flex flex-col justify-between min-h-[350px] md:min-h-[400px]">
               <div>
-                <div className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center mb-6">
-                  <Camera className="w-7 h-7 text-primary icon-glow" />
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-secondary flex items-center justify-center mb-6">
+                  <Camera className="w-6 h-6 md:w-7 md:h-7 text-primary icon-glow" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-light tracking-tight mb-4">
                   {features[0].title}
                 </h3>
-                <p className="text-muted-foreground text-lg leading-relaxed">
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                   {features[0].description}
                 </p>
               </div>
@@ -98,10 +92,10 @@ const BentoGrid = () => {
                       whileInView={{ width: '94%' }}
                       viewport={{ once: true }}
                       transition={{ duration: 1.5, delay: 0.5 }}
-                      className="h-full bg-gradient-to-r from-primary to-teal-glow rounded-full"
+                      className="h-full bg-gradient-to-r from-primary to-orange-400 rounded-full"
                     />
                   </div>
-                  <span className="text-primary font-medium">{t.features.accuracy}</span>
+                  <span className="text-primary font-medium text-sm md:text-base">{t.features.accuracy}</span>
                 </div>
               </div>
             </div>
@@ -116,21 +110,21 @@ const BentoGrid = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: (index + 1) * 0.1 }}
             >
-              <div className="bento-item h-full min-h-[180px]">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-primary icon-glow" />
+              <div className="bento-item h-full min-h-[160px] md:min-h-[180px]">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary flex items-center justify-center mb-4">
+                  <feature.icon className="w-5 h-5 md:w-6 md:h-6 text-primary icon-glow" />
                 </div>
-                <h3 className="text-xl font-light tracking-tight mb-2">
+                <h3 className="text-lg md:text-xl font-light tracking-tight mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
             </motion.div>
           ))}
 
-          {/* Medium Card */}
+          {/* Medium Card (Advanced Analytics) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -138,16 +132,16 @@ const BentoGrid = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="md:col-span-2"
           >
-            <div className="bento-item h-full min-h-[180px]">
-              <div className="flex items-start gap-6">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="w-6 h-6 text-primary icon-glow" />
+            <div className="bento-item h-full min-h-[120px] md:min-h-[180px]">
+              <div className="flex items-start gap-4 md:gap-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="w-5 h-5 md:w-6 md:h-6 text-primary icon-glow" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-light tracking-tight mb-2">
+                  <h3 className="text-lg md:text-xl font-light tracking-tight mb-2">
                     {features[3].title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                     {features[3].description}
                   </p>
                 </div>
@@ -155,28 +149,26 @@ const BentoGrid = () => {
             </div>
           </motion.div>
 
-          {/* Last two small cards */}
-          {features.slice(4).map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: (index + 4) * 0.1 }}
-            >
-              <div className="bento-item h-full min-h-[180px]">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-primary icon-glow" />
-                </div>
-                <h3 className="text-xl font-light tracking-tight mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {feature.description}
-                </p>
+          {/* Last small card (KVKK) */}
+          <motion.div
+            key={features[4].title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <div className="bento-item h-full min-h-[160px] md:min-h-[180px]">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-secondary flex items-center justify-center mb-4">
+                <Heart className="w-5 h-5 md:w-6 md:h-6 text-primary icon-glow" />
               </div>
-            </motion.div>
-          ))}
+              <h3 className="text-lg md:text-xl font-light tracking-tight mb-2">
+                {features[4].title}
+              </h3>
+              <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
+                {features[4].description}
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

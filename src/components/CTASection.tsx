@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
-import rixpilotLogo from '@/assets/rixpilotai_3.png';
+import apronovaLogo from '@/assets/apronovalogo.png';
 import { DemoModal } from './DemoModal';
 import { useState } from 'react';
 
@@ -30,16 +30,16 @@ const CTASection = () => {
             className="relative flex flex-col items-center justify-center mb-10"
           >
             <div className="flex flex-col items-center gap-2">
-              <div className="relative w-36 h-36 flex items-center justify-center">
-                <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full animate-pulse" />
+              <div className="relative w-40 h-40 flex items-center justify-center">
+                <div className="absolute inset-0 bg-amber-500/10 blur-3xl rounded-full animate-pulse" />
                 <img
-                  src={rixpilotLogo}
-                  alt="Rixpilot AI"
-                  className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_20px_rgba(45,212,191,0.6)]"
+                  src={apronovaLogo}
+                  alt="Apronova Logo"
+                  className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_20px_rgba(251,191,36,0.4)]"
                 />
               </div>
-              <span className="text-5xl font-bold tracking-tighter bg-gradient-to-r from-[#2DD4BF] via-[#5EEAD4] to-[#0F766E] bg-clip-text text-transparent">
-                Rixpilot AI
+              <span className="text-5xl font-bold tracking-tighter bg-gradient-to-r from-amber-200 via-orange-300 to-amber-600 bg-clip-text text-transparent">
+                Apronova
               </span>
             </div>
           </motion.div>

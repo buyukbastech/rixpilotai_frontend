@@ -80,29 +80,29 @@ export const DemoModal = ({ isOpen, onClose }: DemoModalProps) => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="relative w-full max-w-2xl bg-black/60 border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl overflow-hidden backdrop-blur-xl"
+                        className="relative w-full max-w-2xl bg-black/60 border border-white/10 rounded-3xl p-6 md:p-12 shadow-2xl overflow-y-auto max-h-[90vh] backdrop-blur-xl"
                     >
                         {/* Close Button */}
                         <button
                             onClick={onClose}
-                            className="absolute top-6 right-6 p-2 rounded-full hover:bg-white/10 text-gray-400 hover:text-white transition-all"
+                            className="absolute top-4 right-4 md:top-6 md:right-6 p-2 rounded-full hover:bg-white/10 text-gray-400 hover:text-white transition-all z-10"
                         >
-                            <X className="w-6 h-6" />
+                            <X className="w-5 h-5 md:w-6 md:h-6" />
                         </button>
 
                         {/* Header */}
-                        <div className="mb-8">
-                            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wide mb-4 border border-primary/20">
+                        <div className="mb-6 md:mb-8">
+                            <span className="inline-block px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-primary/10 text-primary text-[10px] md:text-xs font-bold tracking-wide mb-4 border border-primary/20">
                                 {t.demoModal.badge}
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 tracking-tight">
+                            <h2 className="text-2xl md:text-4xl font-bold text-white mb-2 tracking-tight">
                                 {t.demoModal.title.prefix}
-                                <span className="bg-gradient-to-r from-[#2DD4BF] via-[#5EEAD4] to-[#0F766E] bg-clip-text text-transparent">
+                                <span className="bg-gradient-to-r from-amber-200 via-orange-300 to-amber-600 bg-clip-text text-transparent">
                                     {t.demoModal.title.highlight}
                                 </span>
                                 {t.demoModal.title.suffix}
                             </h2>
-                            <p className="text-gray-400 text-lg">
+                            <p className="text-gray-400 text-sm md:text-lg">
                                 {t.demoModal.subtitle}
                             </p>
                         </div>

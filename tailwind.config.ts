@@ -61,10 +61,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        teal: {
-          DEFAULT: "hsl(175, 100%, 45%)",
-          glow: "hsl(175, 100%, 50%)",
-          muted: "hsl(175, 30%, 15%)",
+        gold: {
+          DEFAULT: "hsl(38, 92%, 50%)",
+          glow: "hsl(38, 100%, 50%)",
+          muted: "hsl(38, 30%, 15%)",
         },
       },
       borderRadius: {
@@ -92,8 +92,8 @@ export default {
           "100%": { opacity: "1" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 40px rgba(0, 224, 200, 0.4)" },
-          "50%": { boxShadow: "0 0 60px rgba(0, 224, 200, 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 40px rgba(251, 191, 36, 0.4)" },
+          "50%": { boxShadow: "0 0 60px rgba(251, 191, 36, 0.6)" },
         },
         "float": {
           "0%, 100%": { transform: "translateY(0)" },

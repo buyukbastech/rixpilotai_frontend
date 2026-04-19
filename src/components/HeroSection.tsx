@@ -1,72 +1,39 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import heroClinic from '@/assets/rixpilot_klinik.mp4';
+import heroImage from '@/assets/apronova.jpg';
 import { DemoModal } from './DemoModal';
-import heroAnaliz from '@/assets/rixpilot_analiz.mp4';
-import heroWhatsapp from '@/assets/rixpilot_whatsapp.mp4';
-import heroSacEkim from '@/assets/rixpilot_sac_ekim.mp4';
-import heroHappyDoctor from '@/assets/rixpilot_happy_doctor.mp4';
-import heroAi2 from '@/assets/rixpilot_ai2.mp4';
-import heroPoster from '@/assets/rixpilotai_3.png';
-
-const heroVideos = [
-  heroClinic,
-  heroAnaliz,
-  heroWhatsapp,
-  heroSacEkim,
-  heroHappyDoctor,
-  heroAi2
-];
 
 const HeroSection = () => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const { t } = useLanguage();
-
-  const handleVideoEnded = () => {
-    setCurrentVideoIndex((prev) => (prev + 1) % heroVideos.length);
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
-        <AnimatePresence>
-          <motion.video
-            key={currentVideoIndex}
-            src={heroVideos[currentVideoIndex]}
-            autoPlay
-            muted
-            loop={false}
-            playsInline
-            controls={false}
-            onEnded={handleVideoEnded}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="w-full h-full object-cover"
-            onLoadedData={(e) => {
-              const video = e.currentTarget;
-              video.play().catch(console.error);
-            }}
-          />
-        </AnimatePresence>
+        <motion.img
+          src={heroImage}
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, ease: 'easeOut' }}
+          className="w-full h-full object-cover"
+          alt="Hero Background"
+        />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
+      <div className="relative z-10 container mx-auto px-6 py-20 md:pt-32 md:pb-24">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center">
           {/* Top Label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 mb-8"
+            className="inline-flex items-center gap-2 mb-6 md:mb-8"
           >
-            <span className="glass-card px-4 py-2 text-sm text-primary font-medium tracking-wide">
+            <span className="glass-card px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm text-primary font-medium tracking-wide">
               {t.hero.label}
             </span>
           </motion.div>
@@ -76,13 +43,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tighter-custom leading-none mb-8"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tighter-custom leading-[1.1] mb-6 md:mb-8"
           >
             <span className="text-gradient">{t.hero.title.part1}</span>{t.hero.title.part2}
             <br />
             <span className="font-medium">{t.hero.title.part3}</span>
-            <br />
-            {t.hero.title.part4}
+            <span className="md:inline"> {t.hero.title.part4}</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -90,7 +56,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-white max-w-2xl mx-auto mb-12 leading-relaxed"
+            className="text-base md:text-xl text-white/90 max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed px-2 md:px-0"
           >
             {t.hero.subtitle.part1} <span className="text-gradient font-bold">{t.hero.subtitle.part2}</span>{t.hero.subtitle.part3}
           </motion.p>

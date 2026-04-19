@@ -12,8 +12,8 @@ export const BorderBeam = ({
     duration = 10,
     delay = 0,
     size = 300,
-    colorFrom = "#00E0C8", // Standard Teal
-    colorTo = "#0F766E",   // Darker Teal
+    colorFrom = "#FBBF24", // Amber-400
+    colorTo = "#D97706",   // Orange-600
 }: BorderBeamProps) => {
     return (
         <div

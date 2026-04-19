@@ -5,82 +5,81 @@ export const translations = {
             solutions: 'Çözümler',
             howItWorks: 'Nasıl Çalışır',
             contact: 'İletişim',
-            demo: 'DEMO TALEP ET',
-            logoText: 'Rixpilot AI',
+            demo: 'Demo Talep Et',
+            login: 'Panel Girişi',
+            logoText: 'Apronova AI',
             featuresId: 'ozellikler',
             solutionsId: 'cozumler',
             howItWorksId: 'nasil-calisir',
             contactId: 'iletisim'
         },
         hero: {
-            label: 'Saç Ekim Kliniklerinin Geleceği',
+            label: 'İşletmelerin Yapay Zeka Geleceği',
             title: {
-                part1: 'Yapay Zeka',
-                part2: ' ile',
-                part3: 'Premium Klinik',
-                part4: 'Deneyimi'
+                part1: 'Yapay zeka',
+                part2: ' kadar akıllı,',
+                part3: 'markanız kadar',
+                part4: 'zarif.'
             },
             subtitle: {
-                part1: 'Dünya çapındaki saç ekim merkezlerini sessiz lüks standartlarında dijitalleştiriyoruz. ',
-                part2: '7/24 Akıllı WhatsApp',
-                part3: ' yanıt sistemiyle danışanlarınıza anında cevap verin.'
+                part1: 'Yapay zeka destekli ',
+                part2: 'WhatsApp asistanı ve akıllı CRM',
+                part3: ' ile randevularınızı otomatikleştirin, gelirinizi takip edin.'
             },
             demoBtn: 'Demo Talep Et',
             howItWorksBtn: 'Nasıl Çalışır?'
         },
         stats: {
             efficiency: { value: '%99.9', label: 'Verimlilik' },
-            global: { value: '15+', label: 'Dil Desteği' },
             time: { value: '7/24', label: 'Aktif' }
         },
         features: {
             label: 'Özellikler',
             title: {
-                part1: 'Premium AI ',
-                part2: 'Özellikleri'
+                part1: 'Her Şey ',
+                part2: 'Kontrol Altında'
             },
-            description: 'Saç ekim kliniklerinizi geleceğe taşıyan akıllı çözümler',
+            description: 'İşletmenizin ihtiyaç duyduğu tüm araçlar, tek bir platformda',
             accuracy: '%94 Doğruluk',
             items: [
-                { title: 'Fotoğraflı Ön Analiz', description: 'AI destekli görüntü analizi ile danışanlarınızın saç durumunu uzaktan değerlendirin.' },
+                { title: 'Akıllı Analiz ve Değerlendirme', description: 'Yapay zeka destekli analizler ile iş süreçlerinizi ve müşteri taleplerini uzaktan değerlendirin.' },
                 { title: 'CRM Entegrasyonu', description: 'Mevcut sistemlerinizle kusursuz entegrasyon.' },
-                { title: '7/24 Rezervasyon Asistanı', description: 'Danışanlarınız gece gündüz randevu alabilir.' },
-                { title: 'Çok Dilli WhatsApp Desteği', description: '15+ dilde otomatik yanıt sistemi ile uluslararası danışanlarınıza anında hizmet.' },
-                { title: 'Gelişmiş Analitik', description: 'Danışan dönüşüm oranları ve performans metrikleri.' },
-                { title: 'KVKK Uyumlu', description: 'Danışan verilerinin güvenliği önceliğimiz.' }
+                { title: '7/24 Rezervasyon Asistanı', description: 'Müşterileriniz gece gündüz randevu alabilir.' },
+                { title: 'Gelişmiş Analitik', description: 'Müşteri dönüşüm oranları ve performans metrikleri.' },
+                { title: 'Müşteri Sadakati', description: 'Otomatik doğum günü mesajları, kampanya ve puan sistemleri.' }
             ]
         },
         solutions: {
             label: 'Çözümler',
             title: {
-                part1: 'Klinik yönetimini kolaylaştıran ',
-                part2: 'çözümler'
+                part1: 'İki Güçlü Çözüm, ',
+                part2: 'Tek Platform'
             },
-            description: 'Danışanlarınız ile iletişimi güçlendiren, iş yükünüzü azaltan ve verimliliğinizi artıran akıllı çözümler.',
+            description: 'WhatsApp AI asistanı ve akıllı CRM paneli ile işletmenizi dijital çağa taşıyın.',
             items: [
-                { title: 'WhatsApp Entegrasyonu', description: 'Danışanlarınız zaten kullandıkları WhatsApp üzerinden size kolayca ulaşabilir.' },
-                { title: '7/24 Aktif Destek', description: 'Yapay zeka asistanınız gece gündüz demeden danışanlarınızın sorularına anında yanıt verir.' },
+                { title: 'WhatsApp Entegrasyonu', description: 'Müşterileriniz zaten kullandıkları WhatsApp üzerinden size kolayca ulaşabilir.' },
+                { title: '7/24 Aktif Destek', description: 'Yapay zeka asistanınız gece gündüz demeden müşterilerinizin sorularına anında yanıt verir.' },
                 { title: 'Otomatik Randevu', description: 'Randevu oluşturma, değiştirme ve iptal işlemlerini otomatik olarak yönetin.' },
-                { title: 'KVKK Uyumlu', description: "Tüm danışan verileri Türkiye'de güvenli sunucularda KVKK standartlarına uygun şekilde saklanır." },
+                { title: 'KVKK Uyumlu', description: "Tüm müşteri verileri Türkiye'de güvenli sunucularda KVKK standartlarına uygun şekilde saklanır." },
                 { title: 'Anında Kurulum', description: 'Teknik süreçleri tamamen biz yönetiyoruz; sisteminizi her şeyiyle hazır bir şekilde size teslim ediyoruz.' },
-                { title: 'Çoklu Kullanıcı', description: 'Tüm ekibiniz tek bir panelden danışan iletişimini takip edebilir.' }
+                { title: 'Çoklu Kullanıcı', description: 'Tüm ekibiniz tek bir panelden müşteri iletişimini takip edebilir.' }
             ]
         },
         howItWorks: {
             label: 'Nasıl Çalışır',
             title: {
-                part1: 'Üç adımda danışan iletişimini ',
+                part1: 'Üç adımda müşteri iletişimini ',
                 part2: 'otomatikleştirin'
             },
             description: 'Karmaşık kurulumlar yok, teknik bilgi gerekmiyor. Dakikalar içinde başlayın.',
             steps: [
-                { title: "Danışan WhatsApp'tan Yazıyor", description: "Danışanınız randevu almak, bilgi sormak veya mevcut randevusunu değiştirmek için WhatsApp üzerinden mesaj gönderir." },
-                { title: 'AI Asistan Anında Yanıt Veriyor', description: 'Yapay zeka destekli asistanınız danışanın mesajını anlayarak saniyeler içinde doğru ve profesyonel bir yanıt üretir.' },
+                { title: "Müşteri WhatsApp'tan Yazıyor", description: "Müşteriniz randevu almak, bilgi sormak veya mevcut randevusunu değiştirmek için WhatsApp üzerinden mesaj gönderir." },
+                { title: 'AI Asistan Anında Yanıt Veriyor', description: 'Yapay zeka destekli asistanınız müşterinin mesajını anlayarak saniyeler içinde doğru ve profesyonel bir yanıt üretir.' },
                 { title: 'İşlem Otomatik Tamamlanıyor', description: 'Randevu oluşturma, hatırlatma gönderme veya bilgi aktarma gibi işlemler otomatik olarak gerçekleştirilir.' }
             ]
         },
         cta: {
-            title: 'Kliniğinizi Dijitalleştirmeye Hazır mısınız?',
+            title: 'İşletmenizi Dijitalleştirmeye Hazır mısınız?',
             description: 'Tüm entegrasyonu profesyonel ekibimizle sizin yerinize biz tamamlıyoruz.',
             btn: 'Ücretsiz Demo Talep Et'
         },
@@ -88,7 +87,7 @@ export const translations = {
             badge: 'DEMO TALEBİ',
             title: {
                 prefix: '',
-                highlight: 'Rixpilot AI',
+                highlight: 'Apronova AI',
                 suffix: "'ı Deneyimleyin"
             },
             subtitle: 'Size özel bir demo randevusu ayarlayalım.',
@@ -99,18 +98,18 @@ export const translations = {
                 emailPlaceholder: 'ornek@sirket.com',
                 companyLabel: 'Şirket',
                 companyPlaceholder: 'Şirketinizin Adı',
-                submit: 'DEMO TALEP ET',
+                submit: 'Demo Talep Et',
                 privacy: 'Bilgileriniz gizlilik politikamız kapsamında korunmaktadır.'
             },
             successMessage: 'Demo talebiniz başarıyla alındı! En kısa sürede sizinle iletişime geçeceğiz.',
             errorMessage: 'Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.'
         },
         footer: {
-            description: 'Saç ekim klinikleri için yapay zeka destekli iletişim ve yönetim çözümleri.',
+            description: 'İşletmeler için yapay zeka destekli iletişim ve yönetim çözümleri.',
             product: 'Ürün',
             community: 'Topluluk',
             legal: 'Yasal',
-            rights: '© 2026 Rixpilot. Tüm hakları saklıdır.'
+            rights: '© 2026 Apronova AI. Tüm hakları saklıdır.'
         }
     },
     en: {
@@ -119,82 +118,81 @@ export const translations = {
             solutions: 'Solutions',
             howItWorks: 'How It Works',
             contact: 'Contact',
-            demo: 'REQUEST DEMO',
-            logoText: 'Rixpilot AI',
+            demo: 'Request Demo',
+            login: 'Panel Login',
+            logoText: 'Apronova AI',
             featuresId: 'features',
             solutionsId: 'solutions',
             howItWorksId: 'how-it-works',
             contactId: 'contact'
         },
         hero: {
-            label: 'The Future of Hair Transplant Clinics',
+            label: 'The Future of AI-Powered Business',
             title: {
-                part1: 'AI Powered',
-                part2: ' ',
-                part3: 'Premium Clinic',
-                part4: 'Experience'
+                part1: 'As smart',
+                part2: ' as AI,',
+                part3: 'as elegant as',
+                part4: 'your brand.'
             },
             subtitle: {
-                part1: 'Digitizing hair transplant centers worldwide to quiet luxury standards. ',
-                part2: '24/7 Smart WhatsApp',
-                part3: ' response system to answer your clients instantly.'
+                part1: 'Automate your appointments and track your revenue with ',
+                part2: 'AI-powered WhatsApp assistant and smart CRM.',
+                part3: ''
             },
             demoBtn: 'Request Demo',
             howItWorksBtn: 'How It Works?'
         },
         stats: {
             efficiency: { value: '99.9%', label: 'Efficiency' },
-            global: { value: '15+', label: 'Languages' },
             time: { value: '24/7', label: 'Active' }
         },
         features: {
             label: 'Features',
             title: {
-                part1: 'Premium AI ',
-                part2: 'Features'
+                part1: 'Everything ',
+                part2: 'Under Control'
             },
-            description: 'Smart solutions carrying your hair transplant clinics into the future',
+            description: 'All the tools your business needs, on a single platform',
             accuracy: '94% Accuracy',
             items: [
-                { title: 'Photo Pre-Analysis', description: 'Evaluate your clients\' hair condition remotely with AI-powered image analysis.' },
+                { title: 'Intelligent Analysis & Evaluation', description: 'Evaluate business processes and customer needs remotely with AI-powered analysis.' },
                 { title: 'CRM Integration', description: 'Seamless integration with your existing systems.' },
-                { title: '24/7 Reservation Assistant', description: 'Your clients can book appointments day and night.' },
-                { title: 'Multi-Language WhatsApp Support', description: 'Instant service to international clients with auto-response system in 15+ languages.' },
-                { title: 'Advanced Analytics', description: 'Client conversion rates and performance metrics.' },
-                { title: 'GDPR Compliant', description: 'Client data security is our priority.' }
+                { title: '24/7 Reservation Assistant', description: 'Your customers can book appointments day and night.' },
+                { title: 'Advanced Analytics', description: 'Customer conversion rates and performance metrics.' },
+                { title: 'Customer Loyalty', description: 'Automated birthday messages, campaigns, and point systems.' }
             ]
         },
         solutions: {
             label: 'Solutions',
             title: {
-                part1: 'Solutions that simplify clinic ',
-                part2: 'management'
+                part1: 'Two Powerful Solutions, ',
+                part2: 'One Platform'
             },
-            description: 'Smart solutions that strengthen communication with clients, reduce workload, and increase efficiency.',
+            description: 'Carry your business into the digital age with the WhatsApp AI assistant and smart CRM panel.',
             items: [
-                { title: 'WhatsApp Integration', description: 'Your clients can easily reach you via WhatsApp, which they already use.' },
-                { title: '24/7 Active Support', description: 'Your AI assistant answers client questions day and night.' },
+                { title: 'WhatsApp Integration', description: 'Your customers can easily reach you via WhatsApp, which they already use.' },
+                { title: '24/7 Active Support', description: 'Your AI assistant answers customer questions day and night.' },
                 { title: 'Auto Scheduling', description: 'Automatically manage appointment creation, rescheduling, and cancellation.' },
-                { title: 'GDPR Compliant', description: "All client data is stored on secure servers in accordance with GDPR standards." },
+                { title: 'GDPR Compliant', description: "All customer data is stored on secure servers in accordance with GDPR standards." },
                 { title: 'Instant Setup', description: 'We manage all technical processes; we deliver your system fully ready.' },
-                { title: 'Multi-User', description: 'Your entire team can track client communication from a single panel.' }
+                { title: 'Multi-User', description: 'Your entire team can track customer communication from a single panel.' }
             ]
         },
         howItWorks: {
             label: 'How It Works',
             title: {
-                part1: 'Automate client communication in ',
+                part1: 'Automate customer communication in ',
                 part2: 'three steps'
             },
             description: 'No complex setups, no technical knowledge required. Start in minutes.',
             steps: [
-                { title: "Client Writes on WhatsApp", description: "Your client sends a message via WhatsApp to book an appointment, ask for info, or reschedule." },
+                { title: "Customer Writes on WhatsApp", description: "Your customer sends a message via WhatsApp to book an appointment, ask for info, or reschedule." },
                 { title: 'AI Assistant Responds Instantly', description: 'Your AI-powered assistant understands the message and generates an accurate professional response in seconds.' },
                 { title: 'Process Completes Automatically', description: 'Actions like booking, sending reminders, or providing info are performed automatically.' }
             ]
         },
         cta: {
-            title: 'Ready to Digitize Your Clinic?',
+            title: 'Ready to Digitize Your Business?',
             description: 'We complete the entire integration for you with our professional team.',
             btn: 'Request Free Demo'
         },
@@ -202,7 +200,7 @@ export const translations = {
             badge: 'DEMO REQUEST',
             title: {
                 prefix: 'Experience ',
-                highlight: 'Rixpilot AI',
+                highlight: 'Apronova AI',
                 suffix: ''
             },
             subtitle: "Let's schedule a custom demo appointment for you.",
@@ -213,18 +211,18 @@ export const translations = {
                 emailPlaceholder: 'example@company.com',
                 companyLabel: 'Company',
                 companyPlaceholder: 'Your Company Name',
-                submit: 'REQUEST DEMO',
+                submit: 'Request Demo',
                 privacy: 'Your information is protected under our privacy policy.'
             },
             successMessage: 'Your demo request has been received! We will contact you shortly.',
             errorMessage: 'An error occurred. Please try again later.'
         },
         footer: {
-            description: 'AI-powered communication and management solutions for hair transplant clinics.',
+            description: 'AI-powered communication and management solutions for modern businesses.',
             product: 'Product',
             community: 'Community',
             legal: 'Legal',
-            rights: '© 2026 Rixpilot. All rights reserved.'
+            rights: '© 2026 Apronova AI. All rights reserved.'
         }
     }
 };

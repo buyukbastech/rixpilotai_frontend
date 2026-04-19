@@ -2,26 +2,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle, Bot, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
-const steps = [
-    {
-        id: 1,
-        icon: MessageCircle,
-        title: "Danışan WhatsApp'tan Yazıyor",
-        description: "Danışanınız randevu almak, bilgi sormak veya mevcut randevusunu değiştirmek için WhatsApp üzerinden mesaj gönderir.",
-    },
-    {
-        id: 2,
-        icon: Bot,
-        title: "AI Asistan Anında Yanıt Veriyor",
-        description: "Yapay zeka destekli asistanınız danışanın mesajını anlayarak saniyeler içinde doğru ve profesyonel bir yanıt üretir.",
-    },
-    {
-        id: 3,
-        icon: CheckCircle2,
-        title: "İşlem Otomatik Tamamlanıyor",
-        description: "Randevu oluşturma, hatırlatma gönderme veya bilgi aktarma gibi işlemler otomatik olarak gerçekleştirilir.",
-    },
-];
+
 
 const HowItWorksSection = () => {
     const { t } = useLanguage();
@@ -48,7 +29,7 @@ const HowItWorksSection = () => {
     ];
 
     return (
-        <section id={t.header.howItWorksId} className="py-24 px-6 relative overflow-hidden">
+        <section id={t.header.howItWorksId} className="py-20 md:py-32 px-6 relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-primary/5 to-black/0 opacity-30" />
 
@@ -59,16 +40,16 @@ const HowItWorksSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-20"
+                    className="text-center mb-16 md:mb-20"
                 >
-                    <span className="glass-card inline-block px-4 py-2 text-sm text-primary font-medium tracking-wide mb-6">
+                    <span className="glass-card inline-block px-4 py-2 text-xs md:text-sm text-primary font-medium tracking-wide mb-6">
                         {t.howItWorks.label}
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-light tracking-tighter-custom mb-6">
+                    <h2 className="text-3xl md:text-5xl font-light tracking-tighter-custom mb-6 px-4 md:px-0">
                         {t.howItWorks.title.part1}
-                        <span className="font-bold text-gradient pr-1">{t.howItWorks.title.part2}</span>
+                        <span className="font-bold text-gradient pr-2">{t.howItWorks.title.part2}</span>
                     </h2>
-                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                    <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto px-4 md:px-0">
                         {t.howItWorks.description}
                     </p>
                 </motion.div>

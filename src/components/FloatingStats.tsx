@@ -65,11 +65,6 @@ const FloatingStats = () => {
       label: t.stats.efficiency.label,
     },
     {
-      icon: Globe,
-      value: t.stats.global.value,
-      label: t.stats.global.label,
-    },
-    {
       icon: Clock,
       value: t.stats.time.value,
       label: t.stats.time.label,
@@ -86,7 +81,7 @@ const FloatingStats = () => {
           transition={{ duration: 0.8 }}
           className="glass-card p-6 md:p-8 float-animation"
         >
-          <div className="grid grid-cols-3 gap-4 md:gap-8">
+          <div className="grid grid-cols-2 gap-4 md:gap-8">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}

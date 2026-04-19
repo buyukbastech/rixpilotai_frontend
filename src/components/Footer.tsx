@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
-import rixpilotLogo from '@/assets/rixpilotai_3.png';
+import apronovaLogo from '@/assets/apronovalogo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -16,15 +16,15 @@ const Footer = () => {
         >
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="relative w-8 h-8 flex items-center justify-center">
-              <div className="absolute inset-0 bg-primary/20 blur-md rounded-full" />
+            <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="absolute inset-0 bg-amber-500/10 blur-lg rounded-full" />
               <img
-                src={rixpilotLogo}
-                alt="Rixpilot Logo"
+                src={apronovaLogo}
+                alt="Apronova Logo"
                 className="w-full h-full object-contain relative z-10"
               />
             </div>
-            <span className="text-lg font-medium tracking-tight">Rixpilot</span>
+            <span className="text-xl font-semibold tracking-tight">Apronova</span>
           </div>
 
           {/* Links */}
